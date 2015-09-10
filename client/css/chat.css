@@ -1,0 +1,143 @@
+#chatbutton .new_msg_counter {
+    border-radius: 7px;
+    float: right;
+    background-color: red;
+    color: white;
+    width: 30%;
+    text-align: center;
+    font-size: 15px;
+    display: none;
+}
+
+#new_message_panel {
+    font-family: 'GraphicPixel';
+    color: #e3e3e3;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 10%;
+    padding: 1%;
+    border-radius: 0 0 0 6px;
+    text-align: center;
+}
+
+#chatbox {
+    position: absolute;
+    height: 83%;
+    width: 90%;
+    top: 5%;
+    left: 6%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#chatbox input {
+    font-size:14px;
+    border:0;
+    padding:8px 0;
+    margin: 1%;
+    margin-left:2%;
+    background: rgba(0, 0, 0, 0.6);
+    width: 96%;
+}
+
+#chatbox input:focus {
+    font-size:14px;
+    border:0;
+    padding:8px 0;
+    margin: 1%;
+    margin-left:2%;
+    background: black;
+    width: 96%;
+}
+
+#chatbox .chatHolder {
+    margin: 1% 1% 0;
+    width: 98%;
+    height: 85%;
+}
+
+#chatbox .chatHolder .chat-room-header {
+    width: 15%;
+    padding: 0.5%;
+    text-align: center;
+}
+
+#chatbox .chatHolder .chat-room-header .msg_counter {
+    display: none;
+}
+
+#chatbox .chatHolder .chat-room-header .room-status{
+    background-image: url('../img/3/spritesheet.png');
+    height: 12px;
+    width: 12px;
+    top: -12px;
+    right: -15px;
+    background-position: -265px -95px;
+    background-size: 316px;
+    float: right;
+}
+
+#chatbox .chatHolder .chat-room-header a.active{
+    color: red;
+}
+
+#chatbox .chatHolder .chat-room-header a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 4%;
+    background-color: black;
+    text-transform: uppercase;
+    border-left-color: darkslategrey;
+    border-left-style: solid;
+    border-left-width: 2px;
+}
+
+#chatbox .chatHolder .chat-room-header.active a {
+    border-left-color: #0cf;
+    border-left-style: solid;
+    border-left-width: 2px;
+}
+
+#chatbox .chatHolder .chat-room-header a:hover {
+    color: #0cf;
+    border-left-color: white;
+}
+
+#chatbox .chatHolder .chat-room-header a:active {
+    border-left-color: #0cf;
+}
+
+.chat-room-content.active .chatArea{
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+.chatHolder .chat-room-headers {
+    display: flex;
+}
+
+.chatHolder .chat-room-content {
+    display: none;
+}
+
+.chatHolder .chat-room-content.active {
+    display: block;
+}
+
+#chatbox .chatHolder .chatArea {
+    height: 70%;
+    width: 96%;
+    left: 0;
+    bottom: inherit;
+    margin: 2%;
+}
+
+#chatbox .chatHolder .chatArea a.username{
+    background: none;
+    color: white;
+}
+
+#chatbox .chatHolder .chatArea span.messageBody{
+    background: none;
+}

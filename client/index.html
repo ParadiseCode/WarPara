@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<!--
+
+Paragon War is based on the BrowserQuest MMORPG engine by Mozilla / Little Workshop http://www.littleworkshop.fr
+
+* Client libraries used: RequireJS, Underscore.js, jQuery, Modernizr
+* Server-side: Node.js, Socket.io
+* Should work in latest versions of Firefox, Chrome, Safari, Opera, Safari Mobile and Firefox for Android
+
+ -->
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" type="image/png" href="img/common/favicon.png">
+        <meta property="og:title" content="Paragon War">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://apps.id.net/paragon-war">
+        <meta property="og:image" content="http://apps.id.net/paragon-war/img/common/promo-title.jpg">
+        <meta property="og:site_name" content="Paragon War">
+        <meta property="og:description" content="Play Paragon War an epic RPG from y8.com">
+        <link rel="stylesheet" href="css/main.css?1" type="text/css">
+        <link rel="stylesheet" href="css/mainmenu.css" type="text/css">
+        <link rel="stylesheet" href="css/potions_menu.css" type="text/css">
+        <link rel="stylesheet" href="css/leader_menu.css" type="text/css">
+        <link rel="stylesheet" href="css/friends_menu.css" type="text/css">
+        <link rel="stylesheet" href="css/profile_menu.css" type="text/css">
+        <link rel="stylesheet" href="css/waypoint_menu.css" type="text/css">
+        <link rel="stylesheet" href="css/key_menu.css" type="text/css">
+        <link rel="stylesheet" href="css/chat.css" type="text/css">
+        <link rel="stylesheet" href="css/achievements.css" type="text/css">
+		<link rel="stylesheet" href="css/key_menu_old.css" type="text/css">
+
+        <script src="js/lib/modernizr.js" type="text/javascript"></script>
+        <script src="js/lib/socket.io-1.2.0.js" type="text/javascript"></script>    
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" href="css/ie.css" type="text/css">
+                <script src="js/lib/css3-mediaqueries.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                document.getElementById('parchment').className = ('error');
+                </script>
+        <![endif]-->
+        <script src="js/detect.js" type="text/javascript"></script>
+        <title>Paragon War</title>
+	</head>
+    <!--[if lt IE 9]>
+	<body class="intro upscaled">
+    <![endif]-->
+	<body class="intro">
+		<div class="table-bg"></div>
+	    <noscript>
+	       <div class="alert">
+	           <span data-i18n="intro.nojs">You need to enable JavaScript to play</span> Paragon War.
+	       </div>
+	    </noscript>
+	    <div id="intro">
+	        <h1 id="logo">
+	        </h1>
+	        <article id="portrait">
+	            <p data-i18n="intro.portrait">
+	               Please rotate your device to landscape mode
+	            </p>
+	            <div id="tilt"></div>
+	        </article>
+	        <section id="parchment" class="createcharacter" style="display:none;">
+	            <div class="parchment-left"></div>
+	            <div class="parchment-middle">
+					<article style="display: none;" id="progress">
+                        <h1 id="progresstext" data-i18n="intro.progresstext">Connecting...</h1>
+						<div class="spinner"></div>
+                    </article>                       
+                    <article id="createcharacter" class="magicparch">
+						<h1>
+							<span class="left-ornament"></span>
+								<span data-i18n="intro.newchar">New Player</span>
+							<span class="right-ornament"></span>
+						</h1>
+						<form action="none" method="get" accept-charset="utf-8">
+							<input value="" id="nameinput" class="stroke" name="player-name" placeholder="Character Name" maxlength="12" type="text">
+						</form>
+						<div class="validation-summary"></div>
+						<div style="display: none;" class="loading"></div>            
+					  <div class="buttons">
+							<div class="create button"></div>
+							<div class="cancel createdialog button"></div>
+						</div>
+                    </article>             
+					<article id="idnet-login" class="magicparch parch1" style="display: block;">
+<!--						<h1 style="padding:0 0 10px 0;">
+							<span class="left-ornament"></span>
+								<span data-i18n="intro.slogan">An Epic Multiplayer Adventure</span>
+							<span class="right-ornament"></span>
+						</h1>-->
+						<div style="display: none;" class="loading"></div>
+						<div class="buttons">
+							<div class="login logobutton"></div>
+							<div class="register logobutton"></div>
+							<div class="guest button"></div>
+                            <div class="forum logobutton"></div>
+						</div>
+                    </article>
+                    <article id="pickcharacter" class="magicparch parch1" >
+						<h1>
+							<span class="left-ornament"></span>
+							<span data-i18n="intro.selectcharacter">Select Character</span>
+							<span class="right-ornament"></span>
+                        </h1>
+                        <div class="charactergrid"></div>
+                        <h1 id="deletetext" style="display:none;" data-i18n="intro.deletechar">Select character to delete</h1>
+						<div id="pickerbuttons" class="buttons">
+                            <div id="newplayer_button" class="newplayer button"></div>
+                            <div id="deleteplayer_button" class="delete button"></div>
+                            <!--<div id="whatsnew_button" class="whatsnew button"></div>-->
+						</div>
+                    </article>                    
+                    <article id="loadcharacter" class="magicparch parch1">
+						<h1>
+							<span class="left-ornament"></span>
+							Paragon Crusade
+							<span class="right-ornament"></span>
+                        </h1>
+						<div id="version-number">v2.05</div>
+						<div class="validation-summary"></div>
+						<div style="display: none;" class="loading"></div>
+						<div class="buttons">
+							<div class="continue button"></div>
+							<div class="newplayer button"></div>
+							<div class="whatsnew button"></div>
+						</div>
+                    </article>
+                    <article id="pre-map" class="magicparch parch1">
+						<div class="buttons">
+							<div id="continuePlay" class="continuePlay button"></div>
+							<div class="cancel button"></div>
+							<div class="leaderboard button"></div>
+                            <div class="forum logobutton"></div>
+						</div>
+					</article>
+                    <article id="genderselection" class="magicparch parch1">
+                    	<h1>
+							<span style="font-weight:bold;">Chose Character</span>
+                        </h1>
+                        <div class="gender-selection">
+                        </div>
+					</article>
+                    <article id="whatsnewlist" class="magicparch parch1">
+						<div class="close"></div>
+						<h1>
+							<span class="left-ornament"></span>
+								<span data-i18n="intro.newversions">New Versions</span>
+							<span class="right-ornament"></span>
+                        </h1>
+						<div id="versions-info"><h3 class="version-number">V2.05 <span class="version-date">3/18/2015</span></h3>
+<ul class="version-improvement">
+	<li> -  XP earned is relative to your level</li>
+	<li> - XP bonus earned when playing with id.net firends</li>
+	<li> - New PvP Arena where you can compete for crystals and extra XP</li>
+	<li> - Tutorial for new players</li>
+	<li> - New leaderboard sorting</li>
+	<li> - Old rings are replaced when you pickup a better one (more room in your inventory)</li>
+</ul>
+<h3 class="version-number">V2.04 <span class="version-date">2/12/2015</span></h3>
+<ul class="version-improvement">
+	<li> - Faster game loading</li>
+	<li> - Reduced server lag</li>
+</ul>
+<h3 class="version-number">V2.03 <span class="version-date">2/6/2015</span></h3>
+<ul class="version-improvement">
+	<li> - New maps dungeons 2 - 5</li>
+	<li> - Gauntlet is now locked until players finish dungeon 6</li>
+	<li> - Small bug fixes</li>
+</ul>
+<h3 class="version-number">V2.02 <span class="version-date">2/4/2015</span></h3>
+<ul class="version-improvement">
+	<li> - Fixed duplicate name in leaderboard after remort</li>
+	<li> - Updated friends list with global private messages</li>
+	<li> - !castle command will take you home</li>
+	<li> - Updated gauntlet map</li>
+	<li> - Small bug fixes</li>
+</ul>
+<h3 class="version-number">V2.01 <span class="version-date">1/31/2015</span></h3>
+<ul class="version-improvement">
+	<li> - Added missing crystal shop for buying items</li>
+	<li> - fixed getting stuck in dungeon 6</li>
+	<li> - fixed locked doors not closing</li>
+	<li> - Reduced server lag</li>
+</ul>
+<h3 class="version-number">V2.00 <span class="version-date">1/30/2015</span></h3>
+<ul class="version-improvement">
+	<li> - New ending with a secret new boss</li>
+	<li> - New leaderboards for PVP and Experience</li>
+	<li> - Updated player page with extra inventory</li>
+	<li> - Updated infinite remort and legendary exp</li>
+	<li> - Crystals awarded for achievements completed</li>
+	<li> - Redesigned hotbar and menus</li>
+	<li> - Improved chat system</li>
+	<li> - Reset player positions for new maps</li>
+	<li> - Small bug fixes</li>
+</ul>
+</div>
+                    </article>
+					<article id="guest" class="magicparch parch1">
+          	           <h1 data-i18n="intro.guestwarning">As a guest, your character will not be saved.</h1>
+						<div id="version-number">v2.05</div>
+						<div style="display: none;" class="loading"></div>
+						<div class="buttons">
+							<div class="play button"></div>
+							<div class="cancel guestdialog button"></div>
+							<div class="whatsnew button"></div>
+						</div>
+                    </article>
+					<article id="joinidnet" class="magicparch parch1">
+						<h1>
+							<span class="left-ornament"></span>
+								<span data-i18n="intro.join">Join</span> id.net
+							<span class="right-ornament"></span>
+                        </h1>
+						<p><span data-i18n="intro.saveyourchar">Save your character</span><br>
+						<span data-i18n="intro.usechat">Use chat features</span><br>
+						<span data-i18n="intro.friendsfeat">Use friend features</span></p>
+						<div class="register logobutton"></div>
+						<br><br>
+                        <span data-i18n="intro.clickclose">click anywhere to close</span>
+                    </article>
+					<article id="convertcharacter" class="magicparch parch1">
+						<h1>
+							<span class="left-ornament"></span>
+								<span data-i18n="intro.choosename">Choose a Name</span>
+							<span class="right-ornament"></span>
+						</h1>
+						<form action="none" method="get" accept-charset="utf-8">
+							<input type="text" id="nameinput2" class="stroke" name="player-name" placeholder="Character Name" maxlength="12">
+						</form>
+						<div class="validation-summary"></div>
+						<div class="create button"></div>
+						<p data-i18n="intro.reloadname">The page will reload after you choose a name.</p>
+                    </article>
+    	            <article id="death" class="magicparch parch1">
+                        <p data-i18n="intro.udead">You are dead...</p>
+    					<div id="respawn" class="button"></div>
+    	            </article>
+                    <article id="error" class="magicparch parch1">
+          	           <h1>
+          	               <span class="left-ornament"></span>
+								<span data-i18n="intro.nogo">Your browser cannot run</span> Paragon War!
+          	               <span class="right-ornament"></span>
+                         </h1>
+                         <p data-i18n="intro.nogo2">We're sorry, but your browser does not support WebSockets</p>
+                    </article>
+	            </div>
+	            <div class="parchment-right"></div>
+	        </section>
+	    </div>
+		<div id="container">
+		    <div id="canvasborder">
+		        <!-- <article id="instructions" class="clickable">
+		            <div class="close"></div>
+		            <h1>
+     	               <span class="left-ornament"></span>
+							<span data-i18n="intro.how2">How to play</span>
+     	               <span class="right-ornament"></span>
+	                </h1>
+	                <ul>
+	                   <li><span class="icon"></span><span data-i18n="intro.instruct1">Left click or tap to move and attack.</span></li>
+	                   <li><span class="icon"></span><span data-i18n="intro.instruct2">Press ENTER or tap the chat button to chat.</span></li>
+	                   <li><span class="icon"></span><span data-i18n="intro.instruct3">Click or tap your weapon to open your inventory.</span></li>
+					   <li><span class="icon"></span><span data-i18n="intro.instruct4">Find Spell books and use them from your inventory.</span></li>
+					   <li><span class="icon"></span><span data-i18n="intro.instruct5">Collect rings as they help you regenerate health.</span></li>
+	                </ul>
+		        </article> -->
+				<!--<article id="about" class="fullparchment clickable">-->
+					<!--<div class="close"></div>-->
+					<!--<div style="width:100%; overflow:hidden; text-align:left;" class="page">-->
+						<!--<div style="width:30%; float:left; padding-left:1%;" id="player-info-col">-->
+							<!--<div style="width:30%; float:left;">-->
+								<!--<img id="playerimage" style="margin:-10px 0 0 0;" ><br>-->
+							<!--</div>-->
+							<!--<div style="width:70%; float:left;">-->
+								<!--<div id="char-name" class="title"> </div>-->
+							<!--</div>-->
+							<!--<div style="clear:both;"></div>-->
+
+							<!--<div class="botsep">-->
+								<!--<div id="char-health">Health: </div>-->
+								<!--<div id="health-bar" style="border:1px solid #3c3c3c;" ><div id="hbar" style="background:#da3050; height:4px;"> &nbsp </div></div>-->
+							<!--</div>-->
+							<!--<div class="botsep">-->
+								<!--<div id="char-mana">Mana: </div>-->
+								<!--<div id="mana-bar" style="border:1px solid #3c3c3c;" ><div id="mbar" style="background:#3068da; height:4px;"> &nbsp </div></div>-->
+							<!--</div>-->
+							<!--<div class="botsep">-->
+								<!--<div id="char-exp">EXP: </div>-->
+								<!--<div id="exp-bar" style="border:1px solid #3c3c3c;" ><div id="ebar" style="background:#9c30da; height:4px;"> &nbsp </div></div>-->
+							<!--</div>-->
+							<!--<div id="char-level" class="botsep">Level: </div>-->
+							<!--<div id="char-ach" class="botsep">Achievements: </div>-->
+                               <!--<div id="char-remortExp" class="botsep"></div>-->
+                               <!--<div id="char-remortPoints" class="botsep"></div>-->
+						<!--</div>-->
+						<!--<div style="width:30%; float:left; overflow:hidden; padding:0 0 0 2%;" id="player-inventory-col">-->
+							<!--<div class="title">Inventory</div>-->
+							<!--<div id="player-hotbar" class="inventoryr4"></div>-->
+							<!--<div id="player-hotbar" class="inventoryr3"></div>-->
+							<!--<div id="player-hotbar" class="inventoryr2"></div>-->
+							<!--<div id="player-hotbar" class="inventoryr1"></div>-->
+						<!--</div>-->
+						<!--<div style="width:30%; float:left; overflow:hidden; padding:0 0 0 2%;" id="player-friends-col">-->
+							<!--<div class="title">Friends <span id="friendsbonus">(Invite friends to get EXP bonus!)</span></div>-->
+							<!--<div id="friendslist" class="idnet-link botsep"></div>-->
+							<!--<div style="padding:4px 0 0 0;">-->
+								<!--<a class="idnet-button leaderboards">Leaderboards</a><br>-->
+								<!--<a class="idnet-button invitebut invite">Invite Friends</a><br>-->
+								<!--<a class="idnet-button aboutjoinbut aboutjoin">Save Account</a>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+                <!--</article>-->
+                <article id="mainmenu" class="menuback clickable">
+                    <div class="close"></div>
+                    <div class="page">
+                        <div id="profile_button" class="main_cell">
+                            <div class="title">Profile</div>
+                            <div class="menuicon"></div>
+                        </div>
+                        <div id="potion_button" class="main_cell">
+                            <div class="title">Potions</div>
+                            <div class="menuicon"></div>
+                        </div>
+                        <div id="spels_button" class="main_cell">
+                            <div class="title">Spells</div>
+                            <div class="menuicon"></div>
+                        </div>
+
+                        <div id="achievements_button" class="main_cell">
+                            <div class="title">Achievements</div>
+                            <div class="menuicon"></div>
+                        </div>
+                        <div id="teleport_button" class="main_cell">
+                            <div class="title">Teleport</div>
+                            <div class="menuicon"></div>
+                        </div>
+                        <div id="keys_button" class="main_cell">
+                            <div class="title">Keys</div>
+                            <div class="menuicon"></div>
+                        </div>
+
+                        <div id="players_button" class="main_cell">
+                            <div class="title">Players</div>
+                            <div class="menuicon"></div>
+                        </div>
+                        <div id="leaderboard_button" class="main_cell">
+                            <div class="title">Leaderboard</div>
+                            <div class="menuicon"></div>
+                        </div>
+                        <div id="mutebutton" class="main_cell">
+                            <div class="title">Sound</div>
+                            <div class="menuicon active"></div>
+                        </div>
+                    </div>
+                </article>
+                <article id="potions_menu" class="menuback clickable">
+                    <div class="close"></div>
+                    <div class="swap_order"></div>
+                    <div class="menu_title">
+
+                        Potions
+                    </div>
+                    <div class="page">
+                        <div class="first line">
+                            <div class="main_cell healthpotion1 flask">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                            <div class="main_cell manapotion1">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                            <div class="main_cell restorepotion1">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                            <div class="main_cell hulkpotion1 firepotion">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                        </div>
+
+                        <div class="second line">
+                            <div class="main_cell healthpotion2">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                            <div class="main_cell manapotion2">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                            <div class="main_cell restorepotion2">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                            <div class="main_cell hulkpotion2">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                        </div>
+
+                        <div class="third line">
+                            <div class="main_cell healthpotion3">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                            <div class="main_cell manapotion3">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                            <div class="main_cell restorepotion3">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                            <div class="main_cell hulkpotion3">
+                                <div class="icon"></div>
+                                <div class="bottle_count">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article id="leader_menu" class="menuback clickable">
+                    <div class="close"></div>
+                    <div class="menu_title">
+                        LeaderBoard
+                    </div>
+                    <div class="timer">
+                        Update in&nbsp;<div class="time">40</div>
+                    </div>
+                    <div class="content_type">
+                        <div class="back"><span><a href="#">Wealth</a></span></div>
+                        <div class="back"><span><a href="#">PvP</a></span></div>
+                        <div class="back"><span><a href="#">EXP</a></span></div>
+                    </div>
+                    <div class="page">
+                        <div class="leader_content">
+                            <table id="leader_stat">
+                                <thead></thead>
+                                <tbody></tbody>
+                            </table>
+                            <div class="date_separator" style="text-align: center;">
+                                <a href="#">24h old player</a>
+                                <a href="#">A 1 week old player</a>
+                                <a href="#">A 1 month old player</a>
+                                <a href="#" class="active">All player</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article id="players_menu" class="menuback clickable">
+                    <div class="close"></div>
+                    <div class="page">
+                        <div class="online_players">
+                            <div class="head">
+                                <div class="title">Online players 0</div>
+                            </div>
+                            <div class="players_content">
+                                <div class="main_table">
+                                    <table id="players_stat">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Level</th>
+                                                <th>Location</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                    <div class="footer">+0 Guests</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="friends">
+                            <div class="head">
+                                <div class="title">id.net friends</div>
+                            </div>
+                            <div class="friends_content">
+                                <div class="bonus_text">You have <span class="friends_counter">0</span> id.net friends online<br>
+                                    That give you <span class="bonus_counter">0</span>% XP bonus</div>
+                                    <div class="friend_panel">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </article>
+                <article id="profile_menu" class="menuback clickable">
+                    <div class="close"></div>
+                    <div style="width:100%; overflow:hidden; text-align:left; margin-top: 2%;" class="page">
+                        <div style="width:60%; float:left; padding-left:1%;" id="main-player-info-col">
+                            <div style="width:30%; float:left; text-align: center;">
+                                <a href="https://www.id.net/identities" target="_blank"><img id="player-image" src="/img/common/char-placeholder.png"></a>
+                                <br>
+                                <div id="char-netname" class="botsep">id.net Name</div>
+                            </div>
+                            <div style="width:60%; height: 20%; float:left; margin-top: -8px;">
+                                <div id="char-name" class="title"> </div>
+                                <div id="char-info">
+                                    <div id="char-level" class="botsep">Level </div>
+                                    <div id="char-remort" class="botsep">Remort 5</div>
+                                    <img class="char-msg">
+                                </div>
+                                <div id="char-items" class="botsep">
+                                    <img class="armor_cell item_equip">
+                                    <img class="shield_cell item_equip">
+                                    <img class="weapon_cell item_equip">
+                                    <img class="amulet_cell item_equip">
+                                    <img class="ring_cell item_equip">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="player-info-col">
+                            <div style="clear:both;"></div>
+                            <div class="botsep">
+                                <div id="char-exp" class="progress-bar-info">Experience: </div>
+                                <div id="exp-bar"><div id="ebar" style="height:4px;"> &nbsp </div></div>
+                            </div>
+                            <div class="botsep">
+                                <div id="char-health" class="progress-bar-info">Health: </div>
+                                <div id="health-bar"><div id="hbar" style="height:4px;"> &nbsp </div></div>
+                            </div>
+                            <div class="botsep">
+                                <div id="char-mana" class="progress-bar-info">Mana: </div>
+                                <div id="mana-bar"><div id="mbar" style="height:4px;"> &nbsp </div></div>
+                            </div>
+                            <!--<div id="char-level" class="botsep">Level: </div>-->
+                        </div>
+                        <table id="secondary-player-info-col" border="1" cellpadding="0" cellspacing="0" cols="3">
+                        <tr>
+	                        <td width="40%" id="char-remortCrystals">Crystals: </td>
+	                        <td class="gt">&gt;</td>
+	                        <td id="char-remortCrystals-rank" class="char-rank">You are ranked 3 in this Leaderboard</td>
+                        </tr>
+                        <tr>
+	                        <td width="40%" id="char-CrystalsPvp">Crystals win in PVP:</td>
+	                        <td class="gt">&gt;</td>
+	                        <td id="char-CrystalsPvp-rank" class="char-rank">You are ranked 3 in this Leaderboard</td>
+                        </tr>
+                        <tr>
+	                        <td width="40%" id="char-expirience">EXP:</td>
+	                        <td class="gt">&gt;</td>
+	                        <td id="char-expirience-rank" class="char-rank">You are ranked 3 in this Leaderboard</td>
+                        </tr>
+                        <tr>
+	                        <td width="40%" id="char-remortExp">Legend EXP:</td>
+	                        <td class="gt">&gt;</td>
+	                        <td id="char-remortExp-rank" class="char-rank">You are ranked 3 in this Leaderboard</td>
+                        </tr>
+                        <tr>
+	                        <td width="40%" id="char-totalExp">Total EXP:</td>
+	                        <td class="gt">&gt;</td>
+	                        <td id="char-totalExp-rank" class="char-rank">You are ranked 3 in this Leaderboard</td>
+                        </tr>
+                            <div class="guest_link"><a href="https://www.id.net/identities" target="_blank">Save Account</a></div>
+                            <div class="guest_info">
+                                And start enjoy new features like: <br>
+                                - General and private Tchat with other players <br>
+                                - Earn crystals to buy new potions and play PvP for much interesting purpose <br>
+                                - access the leaderboard and ranked <br>
+                                - see other players profile <br>
+                            </div>
+                        </table>
+                    </div>
+                </article>
+                <article id="waypoint_menu" class="menuback clickable">
+                    <div class="close"></div>
+                    <div class="page">
+                        <div id="wp_counter">X/XX</div>
+                        <div id="waypoint_list">
+                        </div>
+                    </div>
+                </article>
+                <article id="key_menu" class="menuback clickable">
+                    <div class="close"></div>
+                    <div class="page">
+                        <div id="key_counter">X/XX</div>
+                        <div id="key_list">
+                        </div>
+                    </div>
+                </article>
+				<article id="leaderboards" class="fullparchment clickable">
+					<div class="close"></div>
+					<h1>
+						<span class="left-ornament"></span>Leaderboards<span class="right-ornament"></span>
+                    </h1>
+					<div style="padding:8px 0 0 0;">
+						<div style="width:34%; padding:0 0 0 2%; float:left;">
+							<h1>PVP Leaders</h1>
+						</div>
+						<div style="width:60%; padding:0 0 0 1%; float:left;">
+							<h1>Experience Leaders</h1>
+						</div>
+						<div style="width:34%; padding:0 0 0 2%; float:left;" class="pvpleaders"></div>
+						<div style="width:60%; padding:0 0 0 1%; float:left;" class="expleaders"></div>
+					</div>
+                </article>
+				<article id="profile" class="fullparchment clickable">
+					<div class="close"></div>
+					<h1 style="text-align:center;">
+						<span class="left-ornament"></span>Profile<span class="right-ornament"></span>
+					</h1>
+					<div style="width:100%; overflow:hidden;">
+						<div style="width:10%; float:left; padding-left:15%;">
+							&nbsp
+						</div>
+						<div style="width:30%; float:left;">
+							<p id="profile-name">Name: </p>
+							
+							<p id="profile-health">Health: </p>
+							<div id="health-bar" style="border:1px solid #3c3c3c;" ><div id="phbar" style="background:#da3050; height:4px;"> &nbsp </div></div>
+							<p id="profile-mana">Mana: </p>
+							<div id="mana-bar" style="border:1px solid #3c3c3c;" ><div id="pmbar" style="background:#3068da; height:4px;"> &nbsp </div></div>
+							<p id="profile-exp">EXP: </p>
+							<div id="exp-bar" style="border:1px solid #3c3c3c;" ><div id="pebar" style="background:#9c30da; height:4px;"> &nbsp </div></div>
+						</div>
+						<div style="width:30%; float:left; overflow:hidden; padding-right:15%;">
+							<p id="profile-level">Level: </p>
+							<p id="profile-armor">Armor: </p>
+							<p id="profile-weapon">Weapon: </p>
+						</div>			
+					</div>
+				</article>
+                <article id="store" class="fullparchment clickable">
+                    <div class="close"></div>
+                    <h1 style="padding:10px 0 10px 0;text-align:center;">
+                        <span class="left-ornament"></span>Store<span class="right-ornament"></span>
+                    </h1>
+                    <div style="width:200px;height:50px;display:block;position:absolute;left:100px;top:30px;">
+                      <div id="label_gold" class="title"></div>
+                      <div id="label_cash" class="title"></div>
+                    </div>
+                    <div style="width:40%; padding:0 0 0 10%; float:left;">
+                        <h1>Buy</h1>
+                    </div>
+                    <div style="width:40%; padding:0 0 0 1%; float:left;">
+                        <h1>Sell</h1>
+                    </div>
+                    <div style="width:40%; padding:0 0 0 10%; float:left;" class="storebuy">
+                        <div id="player-hotbar" class="storer4"></div>
+                        <div id="player-hotbar" class="storer3"></div>
+                        <div id="player-hotbar" class="storer2"></div>
+                        <div id="player-hotbar" class="storer1"></div>
+                    </div>
+                    <div style="width:40%; padding:0 0 0 1%; float:left;" class="storesell">
+                        <div id="player-hotbar" class="inventoryr4"></div>
+                        <div id="player-hotbar" class="inventoryr3"></div>
+                        <div id="player-hotbar" class="inventoryr2"></div>
+                        <div id="player-hotbar" class="inventoryr1"></div>
+                    </div>
+                </article>
+                <article id="crystalstore" class="fullparchment clickable">
+                    <div class="close"></div>
+                    <h1 style="padding:10px 0 10px 0;text-align:center;">
+                        <span class="left-ornament"></span>Crystal Store<span class="right-ornament"></span>
+                    </h1>
+                    <div class="iconcrystalblue" style="left:50px;top:16px;"></div>
+                    <div class="title cristaltitle">
+                      X <span id="label_crystals"></span>
+                    </div>
+                    <div class="centerwrap">
+                        <div id="crystalstoregrid" class="crystalstoregrid"></div>
+                    </div>
+                    <div class="storenotice">
+                        <div id="crystalstorenotice"></div>
+                    </div>                    
+                </article>
+                <article id="characterselect" class="fullparchment clickable" style="text-align:center;">
+                    <h1 style="padding:10px 0 10px 0;">
+                        <span class="left-ornament"></span>Select Character<span class="right-ornament"></span>
+                    </h1>
+                    <div class="centerwrap">
+                        <div class="charactergrid"></div>
+                    </div>
+                    <div style="width:47%; padding:0 0 0 2%; float:left;">
+                        <div class="clear"></div>
+                        <button id="character_create" class="remortbutton">CREATE</button>
+                        
+                    </div>
+                    <div style="width:48%; padding:0 0 0 1%; float:left;">
+                        <button id="character_delete" class="remortbutton">DELETE</button>
+                    </div>                        
+                </article>                
+                <article id="remortdialog" class="fullparchment clickable" style="text-align:center;">
+                    <h1 style="padding:10px 0 10px 0;">
+                        <span class="left-ornament"></span>REMORT<span class="right-ornament"></span>
+                    </h1>
+                     <div class="botsep"> Congratulations! You saved the Princess and finished the story.</div>
+                      <div class="botsep" style="padding:10px 0 0 0;">   When you feel ready, click REMORT to achieve Legendary status!</div>
+                     </p>                        
+                    <div style="width:47%; padding:0 0 0 2%; float:left;">
+						<div class="clear"> </div>
+                        <button id="remort_yes" class="remortbutton">REMORT</button>
+                        <div class="botsep" style="padding:10px 0 0 0;">- Restart game</div>
+                        <div class="botsep" style="padding:10px 0 0 0;">- Gain Legendary EXP</div>
+                        <div class="botsep" style="padding:10px 0 0 0;">- Earn a star next to your game</div>
+                        
+                    </div>
+                    <div style="width:48%; padding:0 0 0 1%; float:left;">
+                        <button id="remort_no" class="remortbutton">NOT NOW</button>
+                        <div class="botsep" style="padding:10px 0 0 0;">- Continue playing</div>
+                    </div>                        
+                </article>                
+		        <article id="achievements" class="page1 clickable">
+		            <div class="close"></div>
+		            <div id="cristalpromise">
+			            <div class="iconcrystalblue"></div>
+	                    <div class="title cristalpromisetext">
+	                      1000 Crystals for each achievement completed
+	                    </div>
+                    </div>
+		            <div id="achievements-wrapper">
+		                <div id="lists">
+        		        </div>
+    		        </div>
+    		        <div id="achievements-count" class="stroke">
+    		            Completed
+    		            <div>
+    		                <span id="unlocked-achievements">0</span>
+    		                /
+    		                <span id="total-achievements"></span>
+    		            </div>
+                    Close
+    		        </div>
+		            <nav class="clickable">
+		                <div id="previous"></div>
+		                <div id="next"></div>
+		            </nav>
+		        </article>
+				<article class="winHolder clickable">
+					<div class="attackwin" style="display: none;">
+						<ul id="attackbuttons"></ul>
+					</div>
+					<div class="defensewin" style="display: none;">
+						<ul id="defensebuttons"></ul>
+					</div>
+				</article>
+    			<div id="canvas">
+    				<canvas id="background"></canvas>
+    				<canvas id="entities"></canvas>
+    				<canvas id="foreground" class="clickable"></canvas>
+    			</div>
+    			<div id="bubbles"></div>
+     			<div id="textWindow"></div>
+     			<div id="inspector">
+                    <div class="headshot"><div> </div></div>
+                    <div class="details">
+                        <div class="health"></div>
+                        <span class="name"></span><span class="level"></span>
+                    </div>
+                </div>
+				<div class="friendRequest clickable">
+					<div id="requesttext" style="color:#e3e3e3;">Add Test</div>
+					<span id="accept" style="color:#28e631;">Accept</span> <span id="cancel" style="color:#d82f4b;">Cancel</span>
+				</div>
+                <div id="new_message_panel"></div>
+                <div id="areaname">
+                <div id="areamapname"></div>
+                <div id="gridpos"></div>
+                </div>
+                <div id="dropDialog">
+                    <div id="dropTitle">Input drop count.</div>
+                    <div align="center">
+                        <input type="text" id="dropCount" size="6" maxlength="6">
+                        <span id="dropAccept">&nbsp;Accept&nbsp;</span>
+                        <span id="dropCancel">&nbsp;Cancel&nbsp;</span>
+                    </div>
+                </div>
+                <div id="achievement-notification">
+    			    <div class="coin">
+    			        <div id="coinsparks"></div>
+    			    </div>
+    			    <div id="achievement-info">
+        			    <div class="title">New Achievement Unlocked!</div>
+        			    <div class="name"></div>
+        			    <div class="iconcrystalblue"></div>
+	                    <div class="title cristaltext">
+	                      + 1000 Crystals!!!
+	                    </div>
+    			    </div>
+    			</div>
+                <div id="levelup-notification"></div>
+				<div id="pvp-overlay">
+					<h4 style="text-decoration:underline;">PVP Stats</h4>
+					<div id="kill-count"></div>
+					<div id="leader-count1"></div>
+					<div id="leader-count2"></div>
+					<div id="leader-count3"></div>
+				</div>
+                <div id="chatbox">
+                    <div class="chatHolder">
+                        <div class="chat-room-headers">
+                            <div class="chat-room-header active" id="main">
+                                <div class="msg_counter">0</div>
+                                <a href="#">Global chat</a>
+                            </div>
+                        </div>
+                        <div id="main-content" class="chat-room-content active">
+                            <div class="chatArea">
+                                <ul class="messages"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="none" method="get" accept-charset="utf-8">
+                        <input id="chatinput" class="gp" type="text" maxlength="120">
+                    </form>
+                </div>
+    			<div id="bar-container" class="clickable">
+					<div id="healthglobe">
+						<div id="healthempty"></div>
+						<div id="healthfull"></div>
+						<div id="healthtext">150/150</div>
+					</div>
+					<div id="hotbar" class="hotbar">
+						<div id="inventory0" class="inventoryitem-general inventoryitem-weapon0"></div>
+						<div id="inventory1" class="inventoryitem-general inventoryitem-help"></div>
+						<div id="inventory2" class="inventoryitem-general inventoryitem-empty">
+							<div class="quantitylabel">13</div>
+						</div>
+						<div  id="inventory3"class="inventoryitem-general inventoryitem-empty">
+							<div class="quantitylabel">1</div>
+						</div>
+						<div id="inventory4" class="inventoryitem-general inventoryitem-empty">
+							<div class="quantitylabel"></div>
+						</div>
+						<div id="inventory5" class="inventoryitem-general inventoryitem-empty">
+							<div class="quantitylabel"></div>
+						</div>
+						<div id="inventory6" class="inventoryitem-general inventoryitem-empty">
+							<div class="quantitylabel"></div>
+						</div>
+					</div>
+					<div id="wrapper">
+						<div id="expcontainer">
+							<div id="expprogress">
+								<div id="expbar"></div>
+							</div>
+							<div id="expborder">
+								<div id="expborderleft"></div>
+								<div id="expbordercenter">EXP: 123 456 789 / 321 654 987</div>
+								<div id="expborderright"></div>
+							</div>
+						</div>
+						<div id="msgboxcontainer">
+							<div id="msgleftside"></div>
+							<div id="msgbox">Message text going here.</div>
+							<div id="msgrightside"></div>
+						</div>
+					</div>
+                    <div id="barbuttons">
+						<div id="precisionbutton" class="barbutton"></div>
+						<div id="chatbutton" class="barbutton">
+                            <div class="new_msg_counter">0</div>
+                        </div>
+						<div id="menubutton" class="barbutton"></div>
+                    </div>
+					<div id="managlobe">
+						<div id="manaempty"></div>
+						<div id="manafull"></div>
+						<div id="manatext">50/50</div>
+					</div>
+    			</div>
+				<!--<div class="chatHolder">-->
+					<!--<div class="chatArea">-->
+						<!--<div class="close" style="top:0px; right:0px"></div>-->
+						<!--<ul class="messages"></ul>-->
+					<!--</div>-->
+				<!--</div>-->
+				<div class="msgHolder">
+					<div class="msgArea" style="display: none;">
+						<ul class="gamemessages"></ul>
+					</div>
+				</div>
+		    </div>
+		</div>
+		<footer>
+			 <div id="loadingmessage" style="width:124px;height:14px;background-image:url('img/common/loading-bar.png');background-repeat:no-repeat;background-position:-40px -18px;display:block;margin:0px 55% auto;position:relative;"></div>
+			 <div id="spriteprogressholder" style="width:414px;height:22px;background-image:url('img/common/loading-bar.png');background-repeat:no-repeat;background-position:-8px -44px;display:block;margin:0 auto;position:relative;">
+				<div id="spriteprogressbar" style="width:378px;height:18px;background-image:url('img/common/loading-bar.png');background-repeat:no-repeat;background-position:-19px -74px;display:none;position:absolute;left:19px;top:4px;">
+					<div id="spriteprogress" style="color:black;overflow:hidden;white-space: nowrap;"></div>
+				</div>
+			 </div>
+			 <img src="img/common/08_id_net_logo_xxs.png" alt="Idnet" >
+		</footer>
+
+		<ul id="page-tmpl" class="clickable" style="display:none">
+        </ul>
+        <ul>
+            <li id="achievement-tmpl" style="display:none">
+                <div class="coin"></div>
+                <span class="achievement-name">???</span>
+                <span class="achievement-description">???</span>
+                <div class="achievement-sharing">
+                  <a href="" class="twitter"></a>
+                </div>
+            </li>
+        </ul>
+
+        <img src="img/common/thingy.png" alt="" class="preload">
+
+        <div id="resize-check"></div>
+        <script type="text/javascript">
+            var ctx = document.querySelector('canvas').getContext('2d'),
+                parchment = document.getElementById("parchment");
+
+            if(!Detect.supportsWebSocket()) {
+                parchment.className = "error";
+            }
+
+            if(ctx.mozImageSmoothingEnabled === undefined) {
+                document.querySelector('body').className += ' upscaled';
+            }
+
+            parchment.className = "idnet-login";
+        </script>
+
+        <script src="js/lib/log.js"></script>
+        <script>
+                var require = { waitSeconds: 60 };
+        </script>
+        <script data-main="js/home" src="js/lib/require-jquery.js"></script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58970933-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

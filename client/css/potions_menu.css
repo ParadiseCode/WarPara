@@ -1,0 +1,171 @@
+#potions_menu.menuback{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#potions_menu.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#potions_menu .line{
+    width: 100%;
+    height: 33%;
+}
+
+
+#potions_menu .main_cell{
+    width: 25%;
+    height: 100%;
+    float:left;
+    overflow:hidden;
+}
+
+#potions_menu .menu_title{
+    color: white;
+    font-weight: bold;
+    font-size: 39px;
+    margin-top: 10px;
+}
+
+#potions_menu .page{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    text-align: left;
+}
+
+#potions_menu .bottle_count {
+    color: white;
+    text-align: center;
+    margin-top: -7px;
+}
+
+#potions_menu .main_cell .icon{
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 33%;
+}
+
+#potions_menu .swap_order {
+    position: absolute;
+    width: 8%;
+    height: 12%;
+    float: left;
+    margin: 2% 9%;
+    background: url('../img/3/Sort_Pot_48x48.png') no-repeat;
+}
+
+/*HEALTH POT START*/
+
+#potions_menu .main_cell.healthpotion1 .icon{
+    background-image: url('../img/3/item-emptypotion1.png');
+}
+
+#potions_menu .main_cell.healthpotion1.instock .icon{
+    background-image: url('../img/3/item-healthpotion1.png');
+}
+
+#potions_menu .main_cell.healthpotion2 .icon{
+    background-image: url('../img/3/item-emptypotion2.png');
+}
+
+#potions_menu .main_cell.healthpotion2.instock .icon{
+    background-image: url('../img/3/item-healthpotion2.png');
+}
+
+#potions_menu .main_cell.healthpotion3.instock .icon{
+    background-image: url('../img/3/item-healthpotion3.png');
+}
+
+#potions_menu .main_cell.healthpotion3 .icon{
+    background-image: url('../img/3/item-emptypotion3.png');
+}
+
+ /*HEALTH POT END*/
+
+/*MANA POT START*/
+
+#potions_menu .main_cell.manapotion1.instock .icon{
+     background-image: url('../img/3/item-manapotion1.png');
+ }
+
+#potions_menu .main_cell.manapotion2.instock .icon{
+    background-image: url('../img/3/item-manapotion2.png');
+}
+
+#potions_menu .main_cell.manapotion3.instock .icon{
+    background-image: url('../img/3/item-manapotion3.png');
+}
+
+#potions_menu .main_cell.manapotion1 .icon{
+    background-image: url('../img/3/item-emptypotion1.png');
+}
+
+#potions_menu .main_cell.manapotion2 .icon{
+    background-image: url('../img/3/item-emptypotion2.png');
+}
+
+#potions_menu .main_cell.manapotion3 .icon{
+    background-image: url('../img/3/item-emptypotion3.png');
+}
+
+/*MANA POT END*/
+
+/*RESTORE POT START*/
+
+#potions_menu .main_cell.restorepotion1.instock .icon{
+    background-image: url('../img/3/item-restorepotion1.png');
+}
+
+#potions_menu .main_cell.restorepotion2.instock .icon{
+    background-image: url('../img/3/item-restorepotion2.png');
+}
+
+#potions_menu .main_cell.restorepotion3.instock .icon{
+    background-image: url('../img/3/item-restorepotion3.png');
+}
+
+#potions_menu .main_cell.restorepotion1 .icon{
+    background-image: url('../img/3/item-emptypotion1.png');
+}
+
+#potions_menu .main_cell.restorepotion2 .icon{
+    background-image: url('../img/3/item-emptypotion2.png');
+}
+
+#potions_menu .main_cell.restorepotion3 .icon{
+    background-image: url('../img/3/item-emptypotion3.png');
+}
+
+/*RESTORE POT END*/
+
+/*HULK POT START*/
+
+#potions_menu .main_cell.hulkpotion1.instock .icon{
+    background-image: url('../img/3/item-hulkpotion1.png');
+}
+
+#potions_menu .main_cell.hulkpotion2.instock .icon{
+    background-image: url('../img/3/item-hulkpotion2.png');
+}
+
+#potions_menu .main_cell.hulkpotion3.instock .icon{
+    background-image: url('../img/3/item-hulkpotion3.png');
+}
+
+#potions_menu .main_cell.hulkpotion1 .icon{
+    background-image: url('../img/3/item-emptypotion1.png');
+}
+
+#potions_menu .main_cell.hulkpotion2 .icon{
+    background-image: url('../img/3/item-emptypotion2.png');
+}
+
+#potions_menu .main_cell.hulkpotion3 .icon{
+    background-image: url('../img/3/item-emptypotion3.png');
+}
+
+/*HULK POT END*/

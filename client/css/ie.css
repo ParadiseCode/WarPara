@@ -1,0 +1,4 @@
+/*IE stylesheet*/
+#container {display:none;}
+body {background: url("../img/2/brick.png")}
+.no-opacity #credits, .no-opacity #loadcharacter, .no-opacity #createcharacter, .no-opacity #death, .no-opacity #confirmation, .no-opacity #about, .no-opacity #joinidnet, .no-opacity #convertcharacter {display:none;}

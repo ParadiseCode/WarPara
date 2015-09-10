@@ -1,0 +1,200 @@
+/*thead, tbody {*/
+    /*display: block;*/
+/*}*/
+
+
+#leader_menu.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#leader_menu.active {
+    background-position: -8px -15px;
+    background-size: 173%;
+    width: 99%;
+    height: 90%;
+    margin-left: -49%;
+    margin-top: -25%;
+}
+
+#leader_menu .leader_content {
+    height: 77%;
+    margin-top: 1%;
+}
+
+#leader_menu .page{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    text-align: left;
+}
+
+#leader_menu .menu_title{
+    float: left;
+    /*font-size: 44px;*/
+    font-weight: bold;
+    margin: 3%;
+}
+
+#leader_menu .close {
+    right: -1px;
+    top: 3px;
+}
+
+#leader_menu th{
+    width: 200px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#leader_menu td{
+    width: 200px;
+    text-align: center;
+    font-size: 19px;
+    padding-top: 15px;
+}
+
+table#leader_stat{
+    width: 100%;
+    height: 100%;
+}
+
+table#leader_stat thead > tr {
+    display:block;
+}
+
+table#leader_stat thead th a {
+    color: black;
+    text-decoration: none;
+}
+
+table#leader_stat thead th a.abc{
+    color: green;
+}
+
+table#leader_stat thead th a.desc{
+    color: red;
+}
+
+table#leader_stat tbody {
+    display: block;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#leader_menu .content_type {
+    width: 50%;
+    height: 7%;
+    float: right;
+    font-size: 32px;
+    margin: 3%;
+}
+
+#leader_menu .content_type a {
+    text-decoration: none;
+    color: white;
+}
+
+#leader_menu .content_type .back {
+    display: table;
+    text-align: center;
+    width: 15%;
+    height: 91%;
+    margin-left: 14%;
+    float: right;
+    background-color: blue;
+    border: 2px solid yellow;
+    border-radius: 6px;
+}
+
+#leader_menu .content_type .back span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#leader_menu .content_type .back:hover{
+    background-color: darkred;
+}
+
+#leader_menu .content_type .back.active {
+    background-color: greenyellow;
+}
+
+#leader_menu .content_type .back.active span{
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-radius: 6px;
+}
+
+#leader_menu .data_separator {
+    text-align: center;
+}
+
+#leader_menu .date_separator a {
+    margin: 1%;
+    color: grey;
+}
+
+#leader_menu .date_separator a.active {
+    color: black;
+}
+
+#leader_menu .timer {
+    float: left;
+    display: inline-flex;
+    font-size: 27px;
+    margin-top: 4%;
+    color: grey;
+}
+
+
+@media screen and (min-width: 1501px) {
+    #leader_menu .timer {
+        font-size: 27px;
+    }
+
+    #leader_menu .menu_title{
+        font-size: 44px;
+    }
+
+    #leader_menu .content_type {
+        font-size: 32px;
+    }
+
+    #leader_menu th {
+        font-size: 22px;
+    }
+
+    #leader_menu td{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    #leader_menu .timer         {font-size: 21px;}
+    #leader_menu .menu_title    {font-size: 30px;}
+    #leader_menu .content_type  {font-size: 22px;}
+    #leader_menu th             {font-size: 16px;}
+    #leader_menu td             {font-size: 13px;}
+}
+
+@media screen and (max-width: 1000px) {
+    #leader_menu .menu_title    {font-size: 21px;}
+    #leader_menu .timer         {font-size: 14px;}
+    #leader_menu .content_type  {font-size: 16px;}
+    #leader_menu th             {font-size: 11px;}
+    #leader_menu td             {font-size: 9px;}
+}
+
+@media screen and (max-width: 800px) {
+    #leader_menu .menu_title    {font-size: 14px;}
+    #leader_menu .timer         {font-size: 10px;}
+    #leader_menu .content_type  {font-size: 11px;}
+    #leader_menu th             {font-size: 8px;}
+    #leader_menu td             {font-size: 6px;}
+}
+
+
+

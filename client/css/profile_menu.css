@@ -1,0 +1,215 @@
+#profile_menu #friendslist {
+    min-height: 107px;
+    max-height: 150px;
+}
+
+#profile_menu #main-player-info-col {
+    width: 60%;
+    float: left;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
+#profile_menu .guest_link {
+    display: none;
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+#profile_menu .guest_info {
+    margin: 4%;
+    font-size: 15px;
+    text-align: left;
+    display: none;
+    float: left;
+    line-height: 2;
+}
+
+#profile_menu .guest_link a {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+#profile_menu #player-image {
+    width: 81px;
+    height: 81px;
+    background-size: 100%;
+}
+
+/*#profile_menu .friendsitem {*/
+    /*width: 98%;*/
+/*}*/
+
+#profile_menu {
+    background-position: -8px -15px;
+    background-size: 154%;
+    width:900px;
+    margin-left: -450px;
+}
+
+#profile_menu.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#profile_menu #char-name {
+    font-weight: bold;
+    text-align: center;
+}
+
+#profile_menu #char-level {
+    float: left;
+}
+
+#profile_menu #char-remort {
+    float: left;
+    margin-left: 21%;
+}
+
+#profile_menu .char-msg {
+    background-image: url(/img/3/cursor-talk.png);
+    width: 48px;
+    height: 48px;
+    float: right;
+    margin-top: -7%;
+    margin-right: 13%;
+}
+
+#profile_menu #char-info {
+    height: 25px;
+    margin-bottom: 2%;
+    width: 133%;
+    margin-top: 4%;
+}
+
+#profile_menu #char-items {
+    width: 130%;
+    margin-top: 4%;
+}
+
+#profile_menu .item_equip {
+    float: left;
+    border: 1px black solid;
+    border-radius: 6px;
+    margin-left: 7%;
+    background-size: 100%;
+}
+
+#profile_menu .progress-bar-info {
+    font-size: 14px;
+    margin-bottom: 1%;
+}
+
+#profile_menu #player-info-col {
+    width: 30%;
+    float: right;
+    padding: 3%;
+}
+
+#profile_menu #secondary-player-info-col{
+    margin-top: 9%;
+    margin-left: 6%;
+    white-space: pre;
+    width: 100%;
+    font-family: "GraphicPixel";
+    line-height: 45px;
+}
+
+.char-rank {
+	font-weight: normal;
+	color: #555;
+    font-size: 80%;
+}
+
+.gt {
+	font-size: 20px;
+	font-weight: normal;
+	color: #555;
+}
+
+#profile_menu #player-info-col .botsep {
+    margin: 3% 3% 3% 5%;
+}
+
+#profile_menu #secondary-player-info-col .botsep {
+    margin: 2%;
+}
+
+#profile_menu #mana-bar {
+    border: 1px solid blue;
+}
+
+#profile_menu #mana-bar  #mbar{
+    background: blue;
+}
+
+#profile_menu #health-bar {
+    border: 1px solid red;
+}
+
+#profile_menu #health-bar #hbar{
+    background: rgb(255, 0, 0);
+}
+
+#profile_menu #exp-bar {
+    border: 1px solid rgb(255, 0, 245);
+}
+
+#profile_menu #exp-bar #ebar{
+    background: rgb(255, 0, 245);
+}
+
+@media screen and (min-width: 1501px) {
+	#profile_menu.active {
+	    width:900px;
+	    margin-left: -450px;
+	}
+	#profile_menu .item_equip {
+    	width: 48px;
+    	height: 48px;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	#profile_menu.active {
+	    width:900px;
+	    margin-left: -450px;
+	}
+	#profile_menu .item_equip {
+    	width: 48px;
+    	height: 48px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#profile_menu.active {
+	    width:600px;
+	    margin-left: -300px;
+	}
+	#profile_menu .item_equip {
+    	width: 32px;
+    	height: 32px;
+	}
+	#profile_menu #secondary-player-info-col{
+    	margin-top: 3%;
+    	line-height: 20px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#profile_menu.active {
+	    width:600px;
+	    margin-left: -300px;
+	}
+	#profile_menu .item_equip {
+    	width: 32px;
+    	height: 32px;
+	}
+	#profile_menu #secondary-player-info-col{
+    	margin-top: 3%;
+    	line-height: 20px;
+    	font-size: 16px;
+	}
+}

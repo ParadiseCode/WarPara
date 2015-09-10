@@ -1,0 +1,96 @@
+#mainmenu.menuback{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#mainmenu.active {
+    pointer-events: auto;
+}
+
+#mainmenu .main_cell{
+    width: 33.33%;
+    height: 33.33%;
+    float:left;
+    overflow:hidden;
+}
+
+#mainmenu .main_cell:hover{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.main_cell .title{
+    height: 2%;
+    font-family: "GraphicPixel";
+    color: white;
+    text-align: center;
+}
+
+#mainmenu .main_cell .menuicon{
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (min-width: 1501px) {
+	.menuback {width: 600px; height: 450px; margin-left: -300px; margin-top: -225px;}
+	.page {width: 600px; height: 450px; overflow:hidden; text-align:left;}
+	.menuicon {margin: 30px auto;}
+	#profile_button .menuicon {background-image: url('../img/3/48x48_A.png');}
+	#potion_button .menuicon {background-image: url('../img/3/48x48_B.png');}
+	#spels_button .menuicon {background-image: url('../img/3/48x48_C.png');}
+	#achievements_button .menuicon {background-image: url('../img/3/48x48_D.png');}
+	#teleport_button .menuicon {background-image: url('../img/3/48x48_E.png');}
+	#keys_button .menuicon {background-image: url('../img/3/48x48_F.png');}
+	#players_button .menuicon {background-image: url('../img/3/48x48_G.png');}
+	#leaderboard_button .menuicon {background-image: url('../img/3/48x48_H.png');}
+	#mutebutton .menuicon {background-image: url('../img/3/48x48_I_off.png');}
+	#mutebutton .active {background-image: url('../img/3/48x48_I_on.png');}
+}
+
+@media screen and (max-width: 1500px) {
+	.menuback {width: 400px; height: 300px; margin-left: -200px; margin-top: -150px;}
+	.page {width: 400px; height: 300px; overflow:hidden; text-align:left;}
+	.menuicon {margin: 10px auto;}
+	#profile_button .menuicon {background-image: url('../img/3/48x48_A.png');}
+	#potion_button .menuicon {background-image: url('../img/3/48x48_B.png');}
+	#spels_button .menuicon {background-image: url('../img/3/48x48_C.png');}
+	#achievements_button .menuicon {background-image: url('../img/3/48x48_D.png');}
+	#teleport_button .menuicon {background-image: url('../img/3/48x48_E.png');}
+	#keys_button .menuicon {background-image: url('../img/3/48x48_F.png');}
+	#players_button .menuicon {background-image: url('../img/3/48x48_G.png');}
+	#leaderboard_button .menuicon {background-image: url('../img/3/48x48_H.png');}
+	#mutebutton .menuicon {background-image: url('../img/3/48x48_I_off.png');}
+	#mutebutton .active {background-image: url('../img/3/48x48_I_on.png');}
+}
+
+@media screen and (max-width: 1000px) {
+	.menuback {width: 400px; height: 300px; margin-left: -200px; margin-top: -150px;}
+	.page {width: 400px; height: 300px; overflow:hidden; text-align:left;}
+	.menuicon {margin: 10px auto;}
+	#profile_button .menuicon {background-image: url('../img/2/32x32_A.png');}
+	#potion_button .menuicon {background-image: url('../img/2/32x32_B.png');}
+	#spels_button .menuicon {background-image: url('../img/2/32x32_C.png');}
+	#achievements_button .menuicon {background-image: url('../img/2/32x32_D.png');}
+	#teleport_button .menuicon {background-image: url('../img/2/32x32_E.png');}
+	#keys_button .menuicon {background-image: url('../img/2/32x32_F.png');}
+	#players_button .menuicon {background-image: url('../img/2/32x32_G.png');}
+	#leaderboard_button .menuicon {background-image: url('../img/2/32x32_H.png');}
+	#mutebutton .menuicon {background-image: url('../img/2/32x32_I_off.png');}
+	#mutebutton .active {background-image: url('../img/2/32x32_I_on.png');}
+}
+
+@media screen and (max-width: 800px) {
+	.menuback {width: 400px; height: 300px; margin-left: -200px; margin-top: -150px;}
+	.page {width: 400px; height: 300px; overflow:hidden; text-align:left;}
+	.menuicon {margin: 10px auto;}
+	#profile_button .menuicon {background-image: url('../img/2/32x32_A.png');}
+	#potion_button .menuicon {background-image: url('../img/2/32x32_B.png');}
+	#spels_button .menuicon {background-image: url('../img/2/32x32_C.png');}
+	#achievements_button .menuicon {background-image: url('../img/2/32x32_D.png');}
+	#teleport_button .menuicon {background-image: url('../img/2/32x32_E.png');}
+	#keys_button .menuicon {background-image: url('../img/2/32x32_F.png');}
+	#players_button .menuicon {background-image: url('../img/2/32x32_G.png');}
+	#leaderboard_button .menuicon {background-image: url('../img/2/32x32_H.png');}
+	#mutebutton .menuicon {background-image: url('../img/2/32x32_I_off.png');}
+	#mutebutton .active {background-image: url('../img/2/32x32_I_on.png');}
+}

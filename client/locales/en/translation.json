@@ -1,0 +1,35 @@
+{
+  "intro": {
+    "progresstext": "Connecting...",
+	"nojs": "You need to enable JavaScript to play",
+	"portrait": "Please rotate your device to landscape mode",
+	"newchar": "Create New Character",
+	"slogan": "An Epic Multiplayer Adventure",
+	"selectcharacter": "Select Character",
+	"deletechar": "Select character to delete",
+	"newchar": "New Player",
+	"delete": "Delete",
+	"whatsnew": "What's New",
+	"newversions": "New Versions",
+	"guestwarning": "As a guest, your character will not be saved.",
+	"join": "Join",
+	"saveyourchar": "Save your character",
+	"usechat": "Use chat features",
+	"friendsfeat": "Use friend features",
+	"clickclose": "click anywhere to close",
+	"choosename": "Choose a Name",
+	"reloadname": "The page will reload after you choose a name.",
+	"udead": "You are dead...",
+	"nogo": "Your browser cannot run",
+	"nogo2": "We're sorry, but your browser does not support WebSockets",
+	"how2": "How to play",
+	"instruct1": "Left click or tap to move and attack.",
+	"instruct2": "Press ENTER or tap the chat button to chat.",
+	"instruct3": "Click or tap your weapon to open your inventory.",
+	"instruct4": "Find Spell books and use them from your inventory.",
+	"instruct5": "Collect rings as they help you regenerate health."
+  },
+  "nav": {
+    "home": "Home"
+  }
+}

@@ -1,0 +1,4255 @@
+{
+	"chest": {
+		"id": "chest",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"crystalblue": {
+		"id": "crystalblue",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"trap": {
+		"id": "trap",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			},
+			"explosion": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -4
+	},
+	"armorAnimation": {
+      "id": "trap",
+      "width": 48,
+      "height": 40,
+      "animations": {
+        "atk_left": {
+          "length": 3,
+          "row": 5
+        },
+        "walk_left": {
+          "length": 4,
+          "row": 4
+        },
+        "idle_left": {
+          "length": 2,
+          "row": 4
+        },
+        "atk_up": {
+          "length": 3,
+          "row": 3
+        },
+        "walk_up": {
+          "length": 4,
+          "row": 2
+        },
+        "idle_up": {
+          "length": 2,
+          "row": 2
+        },
+        "atk_down": {
+          "length": 3,
+          "row": 1
+        },
+        "walk_down": {
+          "length": 4,
+          "row": 0
+        },
+        "idle_down": {
+          "length": 2,
+          "row": 0
+        }
+      },
+      "offset_x": -16,
+      "offset_y": -18
+    },
+	"Shield_00": {
+		"id": "Shield_00",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"Shield_01": {
+		"id": "Shield_01",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"Shield_02": {
+		"id": "Shield_02",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"Shield_03": {
+		"id": "Shield_03",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"Shield_04": {
+		"id": "Shield_04",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"Shield_05": {
+		"id": "Shield_05",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"Shield_06": {
+		"id": "Shield_06",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"Shield_07": {
+		"id": "Shield_07",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"Shield_08": {
+		"id": "Shield_08",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"Shield_09": {
+		"id": "Shield_09",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"Shield_10": {
+		"id": "Shield_10",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"explosion": {
+		"id": "explosion",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"explosion": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -4
+	},
+	"explosion-fireball": {
+		"id": "explosion-fireball",
+		"width": 80,
+		"height": 80,
+		"animations": {
+			"explosion": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": -40,
+		"offset_y": -40
+	},
+	"explosion-heal": {
+		"id": "explosion-heal",
+		"width": 48,
+		"height": 48,
+		"animations": {
+			"explosion": {
+				"length": 8,
+				"row": 0
+			}
+		},
+		"offset_x": -24,
+		"offset_y": -24
+	},    
+	"explosion-iceball": {
+		"id": "explosion-iceball",
+		"width": 48,
+		"height": 48,
+		"animations": {
+			"explosion": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": -24,
+		"offset_y": -24
+	},
+	"explosion-boulder": {
+		"id": "explosion-boulder",
+		"width": 32,
+		"height": 32,
+		"animations": {
+			"explosion": {
+				"length": 7,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -16
+	},
+	"explosion-terror": {
+		"id": "explosion-terror",
+		"width": 64,
+		"height": 64,
+		"animations": {
+			"explosion": {
+				"length": 8,
+				"row": 0
+			}
+		},
+		"offset_x": -32,
+		"offset_y": -32
+	},
+	"explosion-stun": {
+		"id": "Mob_060_Effect",
+		"width": 32,
+		"height": 32,
+		"animations": {
+			"explosion": {
+				"length": 5,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -16
+	},
+	"explosion-poison": {
+		"id": "explosion-poison",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"explosion": {
+				"length": 5,
+				"row": 0
+			}
+		},
+		"offset_x": -8,
+		"offset_y": -8
+	},
+	"explosion-transform": {
+		"id": "explosion-transform",
+		"width": 64,
+		"height": 64,
+		"animations": {
+			"explosion": {
+				"length": 5,
+				"row": 0
+			}
+		},
+		"offset_x": -32,
+		"offset_y": -32
+	},    
+	"explosion-lavaball": {
+		"id": "explosion-lavaball",
+		"width": 48,
+		"height": 48,
+		"animations": {
+			"explosion": {
+				"length": 8,
+				"row": 0
+			}
+		},
+		"offset_x": -24,
+		"offset_y": -40
+	},
+	"explosion-blackhole": {
+		"id": "explosion-blackhole",
+		"width": 64,
+		"height": 64,
+		"animations": {
+			"explosion": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": -32,
+		"offset_y": -32
+	},
+	"goblin": {
+		"id": "goblin",
+		"width": 26,
+		"height": 26,
+		"animations": {
+			"atk_right": {
+				"length": 3,
+				"row": 0
+			},
+			"walk_right": {
+				"length": 3,
+				"row": 1
+			},
+			"idle_right": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 5
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 6
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 7
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 8
+			}
+		},
+		"offset_x": -5,
+		"offset_y": -9
+	},
+
+    "jelly": {
+        "id": "jelly",
+        "width": 32,
+        "height": 24,
+      "animations": {
+        "atk_left": {
+          "length": 3,
+          "row": 5
+        },
+        "walk_left": {
+          "length": 4,
+          "row": 4
+        },
+        "idle_left": {
+          "length": 2,
+          "row": 4
+        },
+        "atk_up": {
+          "length": 3,
+          "row": 3
+        },
+        "walk_up": {
+          "length": 4,
+          "row": 2
+        },
+        "idle_up": {
+          "length": 2,
+          "row": 2
+        },
+        "atk_down": {
+          "length": 3,
+          "row": 1
+        },
+        "walk_down": {
+          "length": 4,
+          "row": 0
+        },
+        "idle_down": {
+          "length": 2,
+          "row": 0
+        }
+      },
+        "offset_x": -8,
+        "offset_y": -10
+    },
+	"darkskeleton": {
+		"id": "darkskeleton",
+		"width": 48,
+		"height": 48,
+		"animations": {
+			"atk_right": {
+				"length": 3,
+				"row": 0
+			},
+			"walk_right": {
+				"length": 4,
+				"row": 1
+			},
+			"idle_right": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_up": {
+				"length": 3,
+				"row": 5
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 6
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 7
+			},
+			"idle_down": {
+				"length": 3,
+				"row": 8
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -22
+	},
+	"blackwizard": {
+		"id": "blackwizard",
+		"width": 48,
+		"height": 48,
+		"animations": {
+			"atk_right": {
+				"length": 5,
+				"row": 0
+			},
+			"walk_right": {
+				"length": 4,
+				"row": 1
+			},
+			"idle_right": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_up": {
+				"length": 5,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 5
+			},
+			"atk_down": {
+				"length": 5,
+				"row": 6
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 7
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 8
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -22
+	},
+	"hulk": {
+		"id": "Armor_10M",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	"guard": {
+		"id": "guard",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -5,
+		"offset_y": -8
+	},
+	"guard2": {
+		"id": "guard",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -5,
+		"offset_y": -8
+	},
+	"hiddenwall": {
+		"id": "hiddenwall",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			},
+			"break": {
+				"length": 1,
+				"row": 1
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-key": {
+		"id": "item-key",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-keyred": {
+		"id": "item-keyred",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-keygold": {
+		"id": "item-keygold",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-keygreen": {
+		"id": "item-keygreen",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-keyblue": {
+		"id": "item-keyblue",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-bluesword": {
+		"id": "item-bluesword",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-burger": {
+		"id": "item-burger",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-cake": {
+		"id": "item-cake",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle": {
+				"length": 3,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -6
+	},
+	"item-bombpotion": {
+		"id": "item-bombpotion",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-firepotion": {
+		"id": "item-firepotion",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-firespell": {
+		"id": "item-firespell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-flask": {
+		"id": "item-flask",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	
+	"item-Armor_00F": {
+		"id": "Item_Armor_00F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Armor_00M": {
+		"id": "Item_Armor_00M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	
+	"item-Armor_01F": {
+		"id": "Item_Armor_01F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Armor_01M": {
+		"id": "Item_Armor_01M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+    "item-Armor_02F": {
+		"id": "Item_Armor_02F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Armor_02M": {
+		"id": "Item_Armor_02M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+    "item-Armor_03F": {
+		"id": "Item_Armor_03F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Armor_03M": {
+		"id": "Item_Armor_03M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Armor_04M": {
+		"id": "Item_Armor_04M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+    "item-Armor_04F": {
+		"id": "Item_Armor_04F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Armor_05M": {
+		"id": "Item_Armor_05M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+    "item-Armor_05F": {
+		"id": "Item_Armor_05F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Armor_06M": {
+		"id": "Item_Armor_06M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+    "item-Armor_06F": {
+		"id": "Item_Armor_06F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Armor_07M": {
+		"id": "Item_Armor_07M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+    "item-Armor_07F": {
+		"id": "Item_Armor_07F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Armor_08M": {
+		"id": "Item_Armor_08M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+    "item-Armor_08F": {
+		"id": "Item_Armor_08F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Armor_09M": {
+		"id": "Item_Armor_09M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+    "item-Armor_09F": {
+		"id": "Item_Armor_09F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Armor_10M": {
+		"id": "Item_Armor_10M",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+  	"item-Armor_10F": {
+		"id": "Item_Armor_10F",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-healspell": {
+		"id": "item-healspell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-icespell": {
+		"id": "item-icespell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-tornadospell": {
+		"id": "item-tornadospell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-terrorspell": {
+		"id": "item-terrorspell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-stunspell": {
+		"id": "item-stunspell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-blackholespell": {
+		"id": "item-blackholespell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-transformspell": {
+		"id": "item-transformspell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-poisonspell": {
+		"id": "item-poisonspell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-shieldspell": {
+		"id": "item-shieldspell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-shortbow": {
+		"id": "item-shortbow",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-pinearrow": {
+		"id": "item-pinearrow",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},	
+  "item-manapotion": {
+		"id": "item-manapotion",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-healthpotion1": {
+		"id": "item-healthpotion1",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-healthpotion2": {
+		"id": "item-healthpotion2",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-healthpotion3": {
+		"id": "item-healthpotion3",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-manapotion1": {
+		"id": "item-manapotion1",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-manapotion2": {
+		"id": "item-manapotion2",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-manapotion3": {
+		"id": "item-manapotion3",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-restorepotion1": {
+		"id": "item-restorepotion1",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-restorepotion2": {
+		"id": "item-restorepotion2",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-restorepotion3": {
+		"id": "item-restorepotion3",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-hulkpotion1": {
+		"id": "item-hulkpotion1",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-hulkpotion2": {
+		"id": "item-hulkpotion2",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-hulkpotion3": {
+		"id": "item-hulkpotion3",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_00": {
+		"id": "Item_Sword_00",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_01": {
+		"id": "Item_Sword_01",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_02": {
+		"id": "Item_Sword_02",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_03": {
+		"id": "Item_Sword_03",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_04": {
+		"id": "Item_Sword_04",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_05": {
+		"id": "Item_Sword_05",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_06": {
+		"id": "Item_Sword_06",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_07": {
+		"id": "Item_Sword_07",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_08": {
+		"id": "Item_Sword_08",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_09": {
+		"id": "Item_Sword_09",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Sword_10": {
+		"id": "Item_Sword_10",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Ring_00": {
+		"id": "Ring_00",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Ring_01": {
+		"id": "Ring_01",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Ring_02": {
+		"id": "Ring_02",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Ring_03": {
+		"id": "Ring_03",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Ring_04": {
+		"id": "Ring_04",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Ring_05": {
+		"id": "Ring_05",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Ring_06": {
+		"id": "Ring_06",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Ring_07": {
+		"id": "Ring_07",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Ring_08": {
+		"id": "Ring_08",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Ring_09": {
+		"id": "Ring_09",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Ring_10": {
+		"id": "Ring_10",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Shield_00": {
+		"id": "Item_shield0",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Shield_01": {
+		"id": "Item_shield1",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Shield_02": {
+		"id": "Item_shield2",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Shield_03": {
+		"id": "Item_shield3",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Shield_04": {
+		"id": "Item_shield4",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Shield_05": {
+		"id": "Item_shield5",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Shield_06": {
+		"id": "Item_shield6",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Shield_07": {
+		"id": "Item_shield7",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Shield_08": {
+		"id": "Item_shield8",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Shield_09": {
+		"id": "Item_shield9",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Shield_10": {
+		"id": "Item_shield10",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Amulet_00": {
+		"id": "Amulet_00",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Amulet_01": {
+		"id": "Amulet_01",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Amulet_02": {
+		"id": "Amulet_02",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Amulet_03": {
+		"id": "Amulet_03",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Amulet_04": {
+		"id": "Amulet_04",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Amulet_05": {
+		"id": "Amulet_05",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Amulet_06": {
+		"id": "Amulet_06",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Amulet_07": {
+		"id": "Amulet_07",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Amulet_08": {
+		"id": "Amulet_08",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-Amulet_09": {
+		"id": "Amulet_09",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"item-Amulet_10": {
+		"id": "Amulet_10",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"collectItemsAnimations": {
+		"id": "Amulet_10",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+
+	"king": {
+		"id": "king",
+		"width": 32,
+		"height": 32,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -8,
+		"offset_y": -12
+	},
+
+    "Armor_00M": {
+        "id": "Armor_00M"
+    },
+    "Armor_00F": {
+        "id": "Armor_00F"
+    },
+    "Armor_01M": {
+		"id": "Armor_01M"
+	},
+    "Armor_01F": {
+		"id": "Armor_01F"
+	},
+    "Armor_02M": {
+		"id": "Armor_02M"
+	},
+    "Armor_02F": {
+		"id": "Armor_02F"
+	},
+    "Armor_03M": {
+		"id": "Armor_03M"
+	},
+    "Armor_03F": {
+		"id": "Armor_03F"
+	},
+    "Armor_04M": {
+		"id": "Armor_04M"
+	},
+    "Armor_04F": {
+		"id": "Armor_04F"
+	},
+    "Armor_05M": {
+		"id": "Armor_05M"
+	},
+    "Armor_05F": {
+		"id": "Armor_05F"
+	},
+    "Armor_06M": {
+		"id": "Armor_06M"
+	},
+    "Armor_06F": {
+		"id": "Armor_06F"
+	},
+    "Armor_07M": {
+		"id": "Armor_07M"
+	},
+    "Armor_07F": {
+		"id": "Armor_07F"
+	},
+    "Armor_08M": {
+		"id": "Armor_08M"
+	},
+    "Armor_08F": {
+		"id": "Armor_08F"
+	},
+    "Armor_09M": {
+		"id": "Armor_09M"
+	},
+    "Armor_09F": {
+		"id": "Armor_09F"
+	},
+    "Armor_10M": {
+		"id": "Armor_10M"
+	},
+    "Armor_10F": {
+		"id": "Armor_10F"
+    },
+
+    "CIA01_1": {
+        "id": "CIA01_1"
+    },
+
+    "CIA01_2": {
+        "id": "CIA01_2"
+    },
+	
+	"CIA01_3": {
+        "id": "CIA01_3"
+    },
+	
+	"CIA01_4": {
+        "id": "CIA01_4"
+    },
+	
+	"CIA01_5": {
+        "id": "CIA01_5"
+    },
+
+    "CIA02_1": {
+        "id": "CIA02_1"
+    },
+
+    "CIA02_2": {
+        "id": "CIA02_2"
+    },
+
+    "CIA02_3": {
+        "id": "CIA02_3"
+    },
+
+    "CIA03_1": {
+        "id": "CIA03_1"
+    },
+
+    "CIA03_2": {
+        "id": "CIA03_2"
+    },
+
+    "CIA03_3": {
+        "id": "CIA03_3"
+    },
+
+    "CIA03_4": {
+        "id": "CIA03_4"
+    },
+
+
+    "CIA04_1": {
+        "id": "CIA04_1"
+    },
+
+    "CIA04_2": {
+        "id": "CIA04_2"
+    },
+
+    "CIA04_3": {
+        "id": "CIA04_3"
+    },
+
+    "CIA04_4": {
+        "id": "CIA04_4"
+    },
+
+    "CIA04_5": {
+        "id": "CIA04_5"
+    },
+
+    "CIA04_6": {
+        "id": "CIA04_6"
+    },
+
+    "CIA04_7": {
+        "id": "CIA04_7"
+    },
+    "CIA05_1": {
+        "id": "CIA05_1"
+    },
+
+    "CIA05_2": {
+        "id": "CIA05_2"
+    },
+
+    "CIA05_3": {
+        "id": "CIA05_3"
+    },
+
+    "CIA05_4": {
+        "id": "CIA05_4"
+    },
+
+    "CIA05_5": {
+        "id": "CIA05_5"
+    },
+
+    "CIA06_1": {
+        "id": "CIA06_1"
+    },
+
+    "CIA06_2": {
+        "id": "CIA06_2"
+    },
+
+    "CIA06_3": {
+        "id": "CIA06_3"
+    },
+
+
+    "CIA06_4": {
+        "id": "CIA06_4"
+    },
+
+    "CIA07_1": {
+        "id": "CIA07_1"
+    },
+
+    "CIA07_2": {
+        "id": "CIA07_2"
+    },
+
+    "CIA07_3": {
+        "id": "CIA07_3"
+    },
+
+    "CIA07_4": {
+        "id": "CIA07_4"
+    },
+
+    "CIA07_5": {
+        "id": "CIA07_5"
+    },
+
+    "CIA07_6": {
+        "id": "CIA07_6"
+    },
+
+    "CIA07_7": {
+        "id": "CIA07_7"
+    },
+
+    "CIA08_1": {
+        "id": "CIA08_1"
+    },
+
+    "CIA08_2": {
+        "id": "CIA08_2"
+    },
+
+    "CIA08_3": {
+        "id": "CIA08_3"
+    },
+
+    "CIA08_4": {
+        "id": "CIA08_4"
+    },
+
+    "CIA08_5": {
+        "id": "CIA08_5"
+    },
+
+    "CIA09_1": {
+        "id": "CIA09_1"
+    },
+
+    "CIA09_2": {
+        "id": "CIA09_2"
+    },
+
+    "CIA09_3": {
+        "id": "CIA09_3"
+    },
+
+    "CIA09_4": {
+        "id": "CIA09_4"
+    },
+
+    "CIA09_5": {
+        "id": "CIA09_5"
+    },
+
+    "CIA10_1": {
+        "id": "CIA10_1"
+    },
+
+    "CIA10_2": {
+        "id": "CIA10_2"
+    },
+
+    "CIA10_3": {
+        "id": "CIA10_3"
+    },
+
+    "CIA10_4": {
+        "id": "CIA10_4"
+    },
+
+    "CIA10_5": {
+        "id": "CIA10_5"
+    },
+
+    "CIA10_6": {
+        "id": "CIA10_6"
+    },
+
+	"litbomb": {
+		"id": "litbomb",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 3,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"priest": {
+		"id": "priest",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"shield": {
+		"id": "shield",
+		"width": 64,
+		"height": 64,
+		"animations": {
+			"idle": {
+				"length": 4,
+				"row": 0
+			}
+		},
+		"offset_x": -32,
+		"offset_y": -35
+	},
+	"projectile-blackhole": {
+		"id": "projectile-blackhole",
+		"width": 64,
+		"height": 64,
+		"animations": {
+			"travel": {
+				"length": 4,
+				"row": 0
+			}
+		},
+		"offset_x": -32,
+		"offset_y": -32,
+		"offset_angle": 0
+	},
+	"projectile-transform": {
+		"id": "projectile-transform",
+		"width": 64,
+		"height": 64,
+		"animations": {
+			"travel": {
+				"length": 4,
+				"row": 0
+			}
+		},
+		"offset_x": -32,
+		"offset_y": -32,
+		"offset_angle": 0
+	},
+	"projectile-fireball": {
+		"id": "projectile-fireball",
+		"width": 48,
+		"height": 48,
+		"animations": {
+			"travel": {
+				"length": 8,
+				"row": 0
+			}
+		},
+		"offset_x": -24,
+		"offset_y": -24,
+		"offset_angle": 180
+	},
+	"projectile-iceball": {
+		"id": "projectile-iceball",
+		"width": 48,
+		"height": 48,
+		"animations": {
+			"travel": {
+				"length": 8,
+				"row": 0
+			}
+		},
+		"offset_x": -24,
+		"offset_y": -24,
+		"offset_angle": 180
+	},
+	"projectile-boulder": {
+		"id": "projectile-boulder",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"travel": {
+				"length": 4,
+				"row": 0
+			}
+		},
+		"offset_x": -8,
+		"offset_y": -8,
+		"offset_angle": 180
+	},    
+	"projectile-pinearrow": {
+		"id": "projectile-pinearrow",
+		"width": 3,
+		"height": 14,
+		"animations": {
+			"travel": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": -0,
+		"offset_y": -0,
+		"offset_angle": 180
+	},
+	"projectile-mob6arrow": {
+		"id": "projectile-mob6arrow",
+		"width": 3,
+		"height": 14,
+		"animations": {
+			"travel": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0,
+		"offset_angle": 180
+	},	
+	"projectile-none": {
+		"id": "projectile-none",
+		"width": 64,
+		"height": 64,
+		"animations": {
+			"travel": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": -32,
+		"offset_y": -32,
+		"offset_angle": 0
+	},
+	"projectile-tornado": {
+		"id": "projectile-tornado",
+		"width": 80,
+		"height": 80,
+		"animations": {
+			"travel": {
+				"length": 3,
+				"row": 0
+			}
+		},
+		"offset_x": -40,
+		"offset_y": -40,
+		"offset_angle": 0
+	},
+	"projectile-terror": {
+		"id": "projectile-terror",
+		"width": 64,
+		"height": 64,
+		"animations": {
+			"travel": {
+				"length": 8,
+				"row": 0
+			}
+		},
+		"offset_x": -32,
+		"offset_y": -32,
+		"offset_angle": 180
+	},
+	"projectile-stun": {
+		"id": "projectile-stun",
+		"width": 64,
+		"height": 64,
+		"animations": {
+			"travel": {
+				"length": 8,
+				"row": 0
+			}
+		},
+		"offset_x": -32,
+		"offset_y": -32,
+		"offset_angle": 180
+	},
+	"projectile-poison": {
+		"id": "projectile-poison",
+		"width": 32,
+		"height": 32,
+		"animations": {
+			"travel": {
+				"length": 8,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -16,
+		"offset_angle": 180
+	},
+    "Sword_01": {
+        "id": "Sword_01",
+        "width": 48,
+        "height": 40,
+        "animations": {
+            "atk_left": {
+                "length": 3,
+                "row": 5
+            },
+            "walk_left": {
+                "length": 4,
+                "row": 4
+            },
+            "idle_left": {
+                "length": 2,
+                  "row": 4
+            },
+            "atk_up": {
+                "length": 3,
+                "row": 3
+            },
+            "walk_up": {
+                "length": 4,
+                "row": 2
+            },
+            "idle_up": {
+                "length": 2,
+                "row": 2
+            },
+            "atk_down": {
+                "length": 3,
+                "row": 1
+            },
+            "walk_down": {
+                "length": 4,
+                "row": 0
+            },
+            "idle_down": {
+                "length": 2,
+                "row": 0
+            }
+        },
+        "offset_x": -16,
+        "offset_y": -18
+    },
+
+    "Sword_02": {
+		"id": "Sword_02",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+
+    "Sword_03": {
+		"id": "Sword_03",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+
+    "Sword_04": {
+		"id": "Sword_04",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+
+    "Sword_05": {
+		"id": "Sword_05",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+
+    "Sword_06": {
+		"id": "Sword_06",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+
+    "Sword_07": {
+		"id": "Sword_07",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+
+    "Sword_08": {
+		"id": "Sword_08",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+
+    "Sword_09": {
+		"id": "Sword_09",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+
+    "Sword_10": {
+		"id": "Sword_10",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+	
+	"Sword_00": {
+		"id": "Sword_00",
+		"width": 48,
+		"height": 40,
+		"animations": {
+			"atk_left": {
+				"length": 3,
+				"row": 5
+			},
+			"walk_left": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_left": {
+				"length": 2,
+				"row": 4
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 2
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 1
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -18
+	},
+
+	"rockwall": {
+		"id": "rockwall",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			},
+			"break": {
+				"length": 1,
+				"row": 1
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	
+	"target": {
+		"id": "target",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"move": {
+				"length": 4,
+				"row": 0
+			},
+			"atk": {
+				"length": 4,
+				"row": 1
+			}
+		}
+	},
+	"item-helpbutton": {
+		"id": "item-helpbutton",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			}
+		}
+	},
+
+	"cursor-bow": {
+		"id": "cursor-bow",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			}
+		}
+	},
+	"cursor-spell": {
+		"id": "cursor-spell",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			}
+		}
+	},
+	"cursor-sword": {
+		"id": "cursor-sword",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			}
+		}
+	},
+	"cursor-talk": {
+		"id": "cursor-talk",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			}
+		}
+	},
+	"cursor-point": {
+		"id": "cursor-point",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			}
+		}
+	},
+	"cursor-walk": {
+		"id": "cursor-walk",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			}
+		}
+	},
+	"fireball": {
+		"id": "fireball",
+		"width": 32,
+		"height": 32,
+		"animations": {
+			"atk_right": {
+				"length": 5,
+				"row": 0
+			},
+			"walk_right": {
+				"length": 4,
+				"row": 1
+			},
+			"idle_right": {
+				"length": 3,
+				"row": 2
+			},
+			"atk_up": {
+				"length": 5,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 3,
+				"row": 4
+			},
+			"idle_up": {
+				"length": 3,
+				"row": 5
+			},
+			"atk_down": {
+				"length": 5,
+				"row": 6
+			},
+			"walk_down": {
+				"length": 3,
+				"row": 7
+			},
+			"idle_down": {
+				"length": 3,
+				"row": 8
+			}
+		},
+		"offset_x": -8,
+		"offset_y": -16
+	},
+	"fairy3": {
+		"id": "fairy3",
+		"width": 26,
+		"height": 26,
+		"animations": {
+			"atk_right": {
+				"length": 3,
+				"row": 0
+			},
+			"walk_right": {
+				"length": 3,
+				"row": 1
+			},
+			"idle_right": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 5
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 6
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 7
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 8
+			}
+		},
+		"offset_x": -5,
+		"offset_y": -10
+	},
+	"fairyqueen": {
+		"id": "fairyqueen",
+		"width": 26,
+		"height": 26,
+		"animations": {
+			"atk_right": {
+				"length": 3,
+				"row": 0
+			},
+			"walk_right": {
+				"length": 3,
+				"row": 1
+			},
+			"idle_right": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 5
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 6
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 7
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 8
+			}
+		},
+		"offset_x": -5,
+		"offset_y": -10
+	},
+	"beholder": {
+		"id": "beholder",
+		"width": 48,
+		"height": 48,
+		"animations": {
+			"atk_right": {
+				"length": 3,
+				"row": 0
+			},
+			"walk_right": {
+				"length": 6,
+				"row": 1
+			},
+			"idle_right": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_up": {
+				"length": 3,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 5,
+				"row": 4
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 5
+			},
+			"atk_down": {
+				"length": 3,
+				"row": 6
+			},
+			"walk_down": {
+				"length": 6,
+				"row": 7
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 8
+			}
+		},
+		"offset_x": -16,
+		"offset_y": -20
+	},
+	"lever": {
+		"id": "lever",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			},
+			"idle_up": {
+				"length": 1,
+				"row": 1
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"bandaged": {
+		"id": "bandaged",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"blindwoman": {
+		"id": "blindwoman",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"caretaker": {
+		"id": "caretaker",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"dirtykid": {
+		"id": "dirtykid",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"fortuneteller": {
+		"id": "fortuneteller",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"ghostking": {
+		"id": "ghostking",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"hermit": {
+		"id": "hermit",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"jester": {
+		"id": "jester",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"weaver": {
+		"id": "weaver",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"wounded": {
+		"id": "wounded",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": 0
+	},
+	"faun": {
+		"id": "faun",
+		"width": 32,
+		"height": 32,
+		"animations": {
+			"idle_down": {
+				"length": 6,
+				"row": 0
+			}
+		},
+		"offset_x": -7,
+		"offset_y": -14
+	},
+	"lockeddoor": {
+		"id": "lockeddoor",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			},
+			"idle_down": {
+				"length": 1,
+				"row": 0
+			},
+			"idle_up": {
+				"length": 1,
+				"row": 0
+			},
+			"idle_right": {
+				"length": 1,
+				"row": 1
+			},
+			"idle_left": {
+				"length": 1,
+				"row": 1
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"item-warden": {
+		"id": "item-warden",
+		"width": 64,
+		"height": 64,
+		"animations": {
+			"idle": {
+				"length": 8,
+				"row": 0
+			}
+		},
+		"offset_x": -24,
+		"offset_y": -32
+	},
+	"princess": {
+		"id": "princess",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"queen": {
+		"id": "queen",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"witchesson": {
+		"id": "witchesson",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"matilda": {
+		"id": "matilda",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"dwarf1": {
+		"id": "dwarf1",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"dwarf2": {
+		"id": "dwarf2",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},    
+	"dwarf3": {
+		"id": "dwarf3",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"dwarf4": {
+		"id": "dwarf4",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},    
+	"dwarf5": {
+		"id": "dwarf5",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"dwarf6": {
+		"id": "dwarf6",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"dwarf7": {
+		"id": "dwarf7",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},    
+	"dwarf8": {
+		"id": "dwarf8",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"item-book": {
+		"id": "item-book",
+		"width": 16,
+		"height": 16,
+		"animations": {
+			"idle": {
+				"length": 1,
+				"row": 0
+			}
+		},
+		"offset_x": 0,
+		"offset_y": 0
+	},
+	"writer": {
+		"id": "writer",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"vendor1": {
+		"id": "vendor1",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"vendor2": {
+		"id": "vendor2",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"vendor3": {
+		"id": "vendor3",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"vendor4": {
+		"id": "vendor4",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"morty": {
+		"id": "morty",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"idle_down": {
+				"length": 2,
+				"row": 0
+			}
+		},
+		"offset_x": -4,
+		"offset_y": -8
+	},
+	"hulk_": {
+		"id": "hulk",
+		"width": 32,
+		"height": 32,
+		"animations": {
+			"atk_right": {
+				"length": 4,
+				"row": 0
+			},
+			"walk_right": {
+				"length": 4,
+				"row": 1
+			},
+			"idle_right": {
+				"length": 2,
+				"row": 2
+			},
+			"atk_up": {
+				"length": 4,
+				"row": 3
+			},
+			"walk_up": {
+				"length": 4,
+				"row": 4
+			},
+			"idle_up": {
+				"length": 2,
+				"row": 5
+			},
+			"atk_down": {
+				"length": 4,
+				"row": 6
+			},
+			"walk_down": {
+				"length": 4,
+				"row": 7
+			},
+			"idle_down": {
+				"length": 2,
+				"row": 8
+			}
+		},
+		"offset_x": -8,
+		"offset_y": -12
+	},
+	"portal": {
+		"id": "portal",
+		"width": 48,
+		"height": 48,
+		"animations": {
+			"idle": {
+				"length": 4,
+				"row": 0
+			}
+		}
+	},
+  "mobAnimations": {
+    "id": "Mob_001",
+    "width": 32,
+    "height": 24,
+    "animations": {
+      "atk_left": {
+        "length": 3,
+        "row": 5
+      },
+      "walk_left": {
+        "length": 4,
+        "row": 4
+      },
+      "idle_left": {
+        "length": 2,
+        "row": 4
+      },
+      "atk_up": {
+        "length": 3,
+        "row": 3
+      },
+      "walk_up": {
+        "length": 4,
+        "row": 2
+      },
+      "idle_up": {
+        "length": 2,
+        "row": 2
+      },
+      "atk_down": {
+        "length": 3,
+        "row": 1
+      },
+      "walk_down": {
+        "length": 4,
+        "row": 0
+      },
+      "idle_down": {
+        "length": 2,
+        "row": 0
+      }
+    },
+    "offset_x": -8,
+    "offset_y": -10
+  },
+
+	"shadow16": {
+        "id": "shadow16",
+        "width": 16,
+        "height": 16
+    },
+    "sparks": {
+        "id": "sparks",
+        "width": 16,
+        "height": 16,
+        "animations": {
+                "idle": {
+                        "length": 6,
+                        "row": 0
+                }
+        },
+        "offset_x": 0,
+        "offset_y": 0
+    },
+
+
+	"death": {
+		"id": "death",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"death": {
+				"length": 6,
+				"row": 0
+			}
+	    },
+		"offset_x": -4,
+		"offset_y": -4
+	},
+
+	"death": {
+		"id": "death",
+		"width": 24,
+		"height": 24,
+		"animations": {
+			"death": {
+				"length": 6,
+				"row": 0
+			}
+	    },
+		"offset_x": -4,
+		"offset_y": -4
+	}
+}

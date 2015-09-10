@@ -1,0 +1,26 @@
+! Keep in mind, Idle 1 goes inbetween each Walk 1 and Walk 2 cycle. 
+
+Row 1
+Idle 1, Idle 2, Walk 1, Walk 2
+
+Row 2
+Attack 1, Attack 2, Attack 3
+
+Row 3
+Same as 1, facing backwards
+
+Row 4
+Same as 1, facing backwards
+
+Row 5
+Same as 1, facing left (can be mirrored by coders)
+
+Row 6
+Same as 1, facing left (can be mirrored by coders)
+
+
+--------------
+
+for the swords and the shields, we may need to export in different layers to display those.
+
+you can see on 0 starting psd that the shield and sword are already dispatched in top and bottom layers depending if you facing north or south.

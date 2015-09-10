@@ -1,0 +1,34 @@
+{
+    "port": 8000,
+    "debug_level": "info",
+    "nb_players_per_world": 200,
+    "maps":{
+      "centralarea": "./server/maps/centralarea_server.json",
+      "gauntlet": "./server/maps/gauntlet_server.json",
+      "dungeon1": "./server/maps/dungeon1_server.json",
+      "dungeon2": "./server/maps/dungeon2_server.json",
+      "dungeon3": "./server/maps/dungeon3_server.json",
+      "dungeon4": "./server/maps/dungeon4_server.json",
+      "dungeon5": "./server/maps/dungeon5_server.json",
+      "dungeon6": "./server/maps/dungeon6_server.json",
+      "dungeon7": "./server/maps/dungeon7_server.json",
+      "dungeon8": "./server/maps/dungeon8_server.json",
+      "dungeon9": "./server/maps/dungeon9_server.json",
+      "dungeon10": "./server/maps/dungeon10_server.json",
+      "test1": "./server/maps/test1_server.json",
+
+      "beach": "./server/maps/beach_server.json",
+      "desert": "./server/maps/desert_server.json",
+      "dwarvenkingdom": "./server/maps/dwarvenkingdom_server.json",
+      "fairyland": "./server/maps/fairyland_server.json",
+      "forest": "./server/maps/forest_server.json",
+      "island": "./server/maps/island_server.json",
+      "baronsvalley": "./server/maps/baronsvalley_server.json",
+      "lavaland": "./server/maps/lavaland_server.json"
+    },
+    "use_one_port": true,
+    "mongo_port": 27017,
+    "mongo_host": "127.0.0.1",
+    "mongo_db": "paragon_war",
+    "database": "mongo"
+}

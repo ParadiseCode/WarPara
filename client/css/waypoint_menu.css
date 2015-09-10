@@ -1,0 +1,100 @@
+#waypoint_menu {
+    background-position: -8px -15px;
+    background-size: 154%;
+    width:900px;
+    margin-left: -450px;
+}
+
+#waypoint_menu.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#waypoint_menu .waypoint_body {
+    width: 94%;
+    height: 19%;
+}
+
+#waypoint_menu #waypoint_list {
+    overflow-y: scroll;
+    margin-left: 13%;
+    width: 75%;
+    height: 83%;
+    margin-top: 4%;
+}
+
+#waypoint_menu .page {
+    width:100%;
+    overflow:hidden;
+    text-align:left;
+    margin-top: 2%;
+}
+
+#waypoint_menu #wp_counter {
+    float: right;
+    margin-right: 20%;
+}
+
+
+#waypoint_menu .waypoint_body .waypoint {
+    width: 85%;
+    margin-left: -2%;
+    height: 61%;
+    border: 5px solid #3A2020;
+    float: left;
+    border-radius: 14px;
+    border-left: none;
+    margin-top: 11px;
+    line-height: 47px;
+    text-indent: 4%;
+}
+
+#waypoint_menu .waypoint_body #status {
+    background-image: url('../img/3/locked_wp.png');
+    width: 77px;
+    height: 75px;
+    float: left;
+    background-size: 100%;
+}
+
+.waypoint_body #status img {
+    width: 100%;
+}
+
+.waypoint_body #status.locked img {
+    display: none;
+}
+
+.waypoint_body #status.open img {
+    display: block;
+}
+
+
+@media screen and (max-width: 1500px) {
+    #waypoint_menu .waypoint_body #status {
+        width: 51px;
+        height: 50px;
+    }
+
+    #waypoint_menu .waypoint_body {
+        height: 14%;
+    }
+
+    #waypoint_menu #waypoint_list {
+        margin-top: 2%;
+    }
+
+    #waypoint_menu .waypoint_body .waypoint {
+        margin-left: -1%;
+        line-height: 23px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+

@@ -1,0 +1,29 @@
+{
+    "name": "ParagonWar"
+  , "version": "3.0.0"
+  , "private": true
+  , "dependencies": {
+    "underscore": "~1.8.3"
+    , "log": "~1.4.0"
+    , "bison": "~1.1.1"
+    , "sanitizer": "~0.1.2"
+    , "semver": ">=0"
+    , "mongoose": "4.0.5"
+    , "mongodb": ">=0"
+    , "connect": "3.x"
+    , "requirejs": ">=2"
+    , "bcrypt": ">=0"
+    , "serve-static": "^1.7.1"
+    , "morgan": ">=0"
+    , "socket.io": "~1.2.0"
+	, "async": "0.9.0"
+	, "crypto-js": ">=0"
+	, "request": ">=0"
+	, "i18next": "1.7.10"
+	, "mongo-express": ">=0"
+  }
+  , "engines": {
+      "node": "0.10.x"
+    , "npm": "2.9.x"
+  }
+}
